@@ -4,10 +4,13 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import { IntlProvider } from 'react-intl';
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <IntlProvider>
+      <App />
+    </IntlProvider>
   </BrowserRouter>,
   document.getElementById('root'),
 );
