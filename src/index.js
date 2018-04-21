@@ -7,11 +7,11 @@ import { BrowserRouter } from 'react-router-dom';
 import { IntlProvider } from 'react-intl';
 
 ReactDOM.render(
-  <BrowserRouter>
-    <IntlProvider>
+  <IntlProvider>
+    <BrowserRouter>
       <App />
-    </IntlProvider>
-  </BrowserRouter>,
+    </BrowserRouter>
+  </IntlProvider>,
   document.getElementById('root'),
 );
 registerServiceWorker();
