@@ -1,7 +1,11 @@
 {
-    "plugins": [
-        ["react-intl", {
-            "messagesDir": "./public/messages/"
-        }]
+  "presets": ["react-app"],
+  "plugins": [
+    [
+      "react-intl",
+      {
+        "messagesDir": "./public/messages/"
+      }
     ]
+  ]
 }
