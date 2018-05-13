@@ -1,0 +1,14 @@
+[
+  {
+    "id": "Home.header",
+    "defaultMessage": "Hello, world!"
+  },
+  {
+    "id": "Home.dayMessage",
+    "defaultMessage": "It's a beautiful day outside."
+  },
+  {
+    "id": "Home.dayLink",
+    "defaultMessage": "Click here to find out why!"
+  }
+]

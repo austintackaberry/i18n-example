@@ -9,7 +9,7 @@ const LANG_PATTERN = "./public/locales/*.json";
 
 // Try to delete current json files from public/locales
 try {
-  fs.unlinkSync("./public/locales/*.json");
+  fs.unlinkSync("./public/locales/data.json");
 } catch (error) {
   console.log(error);
 }
