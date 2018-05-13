@@ -1,0 +1,9 @@
+{
+  "en": {
+    "Weather.message": "Because it is sunny!",
+    "Day.homeLink": "Go back home",
+    "Home.header": "Hello, world!",
+    "Home.dayMessage": "It's a beautiful day outside.",
+    "Home.dayLink": "Click here to find out why!"
+  }
+}
