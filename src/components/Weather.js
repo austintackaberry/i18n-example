@@ -3,7 +3,7 @@ import {FormattedMessage} from 'react-intl';
 import {injectIntl, defineMessages} from 'react-intl';
 
 const allMessages = defineMessages({
-    addressTitle: {id: 'field.address.title', defaultMessage: "Home address"}
+    pageTitle: {id: 'Weather.title', defaultMessage: "Weather Title"}
 });
 
 function Weather(props) {
@@ -13,7 +13,7 @@ function Weather(props) {
 
     return (
         <React.Fragment>
-            <h3>{msg('addressTitle')}</h3>
+            <h3>{msg('pageTitle')}</h3>
             <p>
                 <FormattedMessage id="Weather.message" defaultMessage="Because it is sunny!"/>
             </p>
