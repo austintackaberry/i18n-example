@@ -1,12 +1,24 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import {FormattedMessage} from 'react-intl';
+import {injectIntl, defineMessages} from 'react-intl';
 
-function Weather() {
-  return (
-    <p>
-      <FormattedMessage id="Weather.message" defaultMessage="Because it is sunny!" />
-    </p>
-  );
+const allMessages = defineMessages({
+    pageTitle: {id: 'Weather.title', defaultMessage: "Weather Title"}
+});
+
+function Weather(props) {
+
+    // helper function for getting a message translation
+    const msg = key => props.intl.formatMessage(allMessages[key]);
+
+    return (
+        <React.Fragment>
+            <h3>{msg('pageTitle')}</h3>
+            <p>
+                <FormattedMessage id="Weather.message" defaultMessage="Because it is sunny!"/>
+            </p>
+        </React.Fragment>
+    );
 }
 
-export default Weather;
+export default injectIntl(Weather);
