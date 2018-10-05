@@ -51,6 +51,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build:langs": "NODE_ENV='production' babel-node scripts/mergeMessages.js",
+    "i18n": "NODE_ENV='production' babel src/*/**.js --plugins=react-intl && npm run build:langs",
     "build": "npm run build:langs && node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
